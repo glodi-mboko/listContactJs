@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1> Répectoire de contact</h1>
+    </nav>
+  </header>
+  <div class="mes-box">
+    <div class="box-un">
+      <h2>formulaire de contact</h2>
+      <form action="/page-traitement-de-donnees" methode="post">
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="prenom" required>
+        </div>
+        <div>
+          <label for="telephone">Télephone</label>
+          <input type="telephone" id="telephone" name="telephone" required>
+        </div>
+
+        <div>
+          <label for="groupe">Groupe</label>
+          <select type="groupe" id="groupe" required>
+            <option value="disabled selected hidden"> </option>
+            <option value="famille">famille</option>
+            <option value="amis">amis</option>
+            <option value="autre">Autres</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio" cols="30" rows="05" required></textarea>
+        </div>
+        <div class="glisser">
+          <header>Deplacer la photo ici </header>
+          <span>Ou</span>
+          <button>Télecharger</button>
+          <input type="file" hidden>
+        </div>
+
+        <div class="bouton">
+          <button class="creer">créer</button>
+          <button type="reset" class="reinit">Réinit.</button>
+        </div>
+    </div>
+    </form>
+
+    <div class="contact">
+      <div class="liste">
+        <h2>liste de contact</h2>
+      </div>
+     
+        <div class="box-trois">
+        
+         
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
